@@ -1,0 +1,47 @@
+.maze{
+    width: 50%;
+    height: auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.maze tr{
+    padding: 0;
+    margin: 0;
+}
+
+.maze td{
+    padding-bottom: 5%;
+    width: 5%;
+    height: 0;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.way{
+    background-color: greenyellow !important;
+}
+
+.visited{
+    background-color: yellowgreen;
+}
+
+.position{
+    background-color: red;
+}
+
+.border-top{   
+    border-top: 1px solid black !important;
+}
+.border-left{
+    border-left: 1px solid black !important;
+}
+.border-bottom{
+    border-bottom: 1px solid black !important;
+}
+.border-right{
+    border-right: 1px solid black !important;
+}
+
+.none{
+    background-color: lightgray;
+}
