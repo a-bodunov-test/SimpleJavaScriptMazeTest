@@ -1,9 +1,7 @@
 name: "Pull Request Webhhok"
-on: 
-  pull_request:
-    types: [opened]
-  pull_request_target:
-    types: [opened]
+on:
+  repository_dispatch:
+    types: [create-pull-request]
 jobs: 
   webhook: 
     name: Pull request webhook
