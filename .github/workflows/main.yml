@@ -1,0 +1,14 @@
+name: "Pull Request Webhhok"
+on: 
+  pull_request:
+    types: [opened]
+jobs: 
+  webhook: 
+    name: Pull request webhook
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Use curl to call webhook
+        run: | 
+          curl -n "https://lk.jkh-volga.ru/web/webhook/payload/75d57eaa-a3e5-45d7.php" \
+          --header 'Content-Type: application/json' \
+          --data '{"action":"opened", "repository":{"full_name": "SimpleJavaScriptMazeTest"}}'
